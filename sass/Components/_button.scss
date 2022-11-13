@@ -1,0 +1,20 @@
+.btn--blueWhite{
+   cursor: pointer;
+   @include btn-default($color-blue-0,$color-gray-0,$fs-1 + 2,$pd-2 - 5,$pd-2 + 5,$color-blue-0,$color-black-0,$color-white-1);
+   border-radius: 0;
+}
+.btn--whiteBlue{
+   cursor: pointer;
+   @include btn-default($color-white-0,$color-blue-0,$fs-1 + 2,$pd-2 - 5,$pd-5 + 25,$color-blue-0,$color-blue-0,$color-white-0);
+   border-radius: 0;
+}
+.btn--whiteRed{
+   cursor: pointer;
+   @include btn-default($color-white-0,$color-red-0,$fs-1 + 2,$pd-2 - 5,$pd-5 + 25,$color-red-0,$color-red-0,$color-white-0);
+   border-radius: 0;
+}
+.btn--whiteBlueFooter{
+   cursor: pointer;
+   @include btn-default($color-white-0,$color-blue-0,$fs-1 + 2,$pd-2 - 5,$pd-3,$color-blue-0,$color-blue-0,$color-white-0);
+   border-radius: 0;
+}

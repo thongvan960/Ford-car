@@ -1,0 +1,33 @@
+@mixin styleText($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin btn-default($color,$bg-color,$fs,$pd-y,$pd-x,$boder-color-1,$color-hover,$bg-color-hover) {
+    color: $color;
+    background-color: $bg-color;
+    font-size: $fs;
+    padding:$pd-y $pd-x ;
+    border: 1px solid $boder-color-1;
+    &:hover {
+        color: $color-hover;
+        background-color: $bg-color-hover;
+    }
+}
+
+
+
+@mixin reponsive($screen) {
+    @if map-has-key($map:$breakpoints, $key:$screen) {
+        $value: map-get($map:$breakpoints, $key:$screen);
+
+        @media screen and (max-width:$value) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Nhap lai di";
+    }
+}

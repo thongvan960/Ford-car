@@ -1,0 +1,37 @@
+.mainFooter {
+   background-color: $color-black-2;
+   padding: 40px 70px 100px;
+   .mainFooter__content {
+
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+
+      li {
+         .list-heading {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 30%;
+            margin-bottom: 8%;
+            span {
+               @include styleText($color-white-0,$fs-1 + 3,$fw-normal);
+            }
+            span.arrowDown{
+               display: none;
+            }
+         }
+
+         ul {
+            li {
+               margin: 3% 0;
+               a {
+                  
+                  @include styleText($color-gray-3,$fs-1 + 1,$fw-normal);
+                  &:hover{
+                     color: $color-white-0;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

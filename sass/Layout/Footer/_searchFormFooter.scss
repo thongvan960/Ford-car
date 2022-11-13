@@ -1,0 +1,36 @@
+.searchFormFooter{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 35px 70px;
+   background-color: $color-black-1;
+   .form-group{
+      display: flex;
+      align-items: center;
+      
+      i{
+         color: $color-white-0;
+         font-size: $fs-3 + 5;
+      }
+      input{
+         font-size: $fs-3; border: none;
+         background-color: $color-black-1;
+         padding: 5px 10px;
+         &:focus{
+            outline: none;
+            background: linear-gradient(to right, var(--color-pink-1), var(--color-pink-2));
+         }
+      }
+      
+   }
+   ul{
+      li{
+         display: inline;
+         margin: 0 10px;
+         @include styleText($color-gray-1,$fs-1 ,$fw-normal);
+        &:first-child{
+         @include styleText($color-white-0,$fs-1 ,$fw-bold-1);
+        }
+      }
+   }
+}

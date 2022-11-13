@@ -1,0 +1,37 @@
+.backToTop{
+   position: fixed;
+   right: 30px;
+   bottom: 30px;
+   opacity: 0;
+   z-index: 1000;
+   transition: all 0.3s ease-in-out;
+   pointer-events: none;
+   transform: rotate(0g);
+   background-color: rgba(0,0,0,0.6);
+   border: 3px solid $color-blue-0;
+   transition: all 0.3s ease;
+   i{
+      cursor: pointer;
+      height: 36px;
+      width: 36px;
+      line-height: 36px;
+      text-align: center;
+      font-size: 28px;
+      color: $color-white-0;
+      transform: rotate(0);
+      transition: all 0.3s ease;
+   }
+   &:hover{
+      background-color: $color-blue-4;
+      border-color: $color-black-3;
+      transform: rotate(45deg);
+      i{
+         transform: rotate(-45deg);
+      }
+      
+   }
+}
+.backToTop-active{
+   opacity: 1;
+   pointer-events: auto;
+}

@@ -1,0 +1,11 @@
+.expandedFeature3{
+   padding: 40px 0 70px;
+   background-color: $color-gray-2;
+   .expandedFeature3__content{
+      text-align: center;
+      h2{
+         @include styleText($color-red-0,$fs-4 + 5,$fw-normal);
+         margin-bottom: $mg-4;
+      }
+   }
+}

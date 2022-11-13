@@ -1,0 +1,15 @@
+.bannerFooter{
+   background-color: $color-blue-2;
+   padding: 50px 0 20px;
+   .bannerFooter__content{
+      text-align: center;
+      h2{
+         @include styleText($color-white-0,$fs-4 + 5,$fw-normal);
+         margin-bottom: $mg-1;
+      }
+      p{
+         @include styleText($color-white-0,$fs-1,$fw-normal);
+         margin-bottom: $mg-2;
+      }
+   }
+}

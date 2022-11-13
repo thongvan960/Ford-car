@@ -1,0 +1,98 @@
+header{
+    .topHeader {
+        background-color: $color-gray-0;
+        height: 40px;
+        line-height: 40px;
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 $pd-5*2;
+    
+            li {
+                i {
+                    padding-right: 10px;
+                }
+              
+                span {
+                    &:hover {
+                        color: $color-blue-0;
+                    }
+                }
+    
+                &:last-child {
+                    span {
+                        color: $color-blue-0;
+                    }
+                }
+            }
+    
+        }
+    }
+    
+    .mainHeader {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px $pd-5*2;
+        border-bottom: 1px solid #ddd;
+        .nav-left {
+            display: flex;
+            align-items: center;
+            .main-nav {
+                padding-left: 50px;
+                li {
+                    display: inline;
+                    margin: 0 12px;
+                    a{
+                        font-size: $fs-1 + 2;
+                        color: $color-blue-0;
+                        cursor: pointer;
+                    }
+                }
+    
+            }
+        }
+        .nav-right {
+                display: flex;
+                align-items: center;
+                color: $color-blue-0;
+            li {
+                display: inline-flex;
+                align-items: center;
+                margin: 0 15px;
+                font-size: $fs-1 + 1;
+              
+                button{
+                    cursor: pointer;
+                    border:none;
+                    background-color: transparent;
+                    i{
+                        font-size: 20px;
+                        color: $color-blue-0;
+                    }
+                }
+                cursor: pointer;
+                i{
+                    padding-right: 10px;
+                }
+            }
+        }
+    
+    }
+}
+
+.sticky-ford{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+    max-width: 1440px;
+    margin: auto;
+    .mainHeader{
+        background-color: #ffffff;
+    }
+}

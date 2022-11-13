@@ -1,0 +1,26 @@
+.disclosures{
+   position: relative;
+      .disclosures__heading{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+         text-align: center;
+         @include styleText($color-blue-0,$fs-1,$fw-normal);
+         padding: 30px 0;
+         i{
+            margin-left: 10px;
+         }
+      }
+      .disclosures__content{
+         background-color: $color-gray-2;
+         max-height: 0;
+         transition: max-height 0.3s ease-out;
+         overflow: hidden;
+         overflow-y: scroll;
+         -ms-overflow-style: auto;
+         .disclosures__text{
+            padding: 40px 70px; 
+         }
+      }
+}

@@ -1,0 +1,87 @@
+.carousel {
+   position: relative;
+   .carousel__item {
+      position: relative;
+      height: 620px;
+      overflow: hidden;
+
+      picture {
+         img {
+            width: 100%;
+            display: block;
+         }
+      }
+
+      .carousel__content {
+         position: absolute;
+         top: 10%;
+         left: 7%;
+
+         h1 {
+            @include styleText($color-black-4, $fs-4 + 2, $fw-normal);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+         }
+      }
+   }
+
+   .prev {
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 70px;
+      width: 58px;
+      line-break: 70px;
+      text-align: center;
+      color: $color-white-0;
+      background-color: rgba(85, 85, 85, 0.8);
+      border: 1px solid rgba(85, 85, 85, 0.8);
+      border-radius: 0;
+
+      i {
+         font-size: 50px;
+         transform: translate(-2px, 2px);
+      }
+      &:hover{
+         color:$color-blue-5;
+         background-color: $color-white-0;
+         border: 1px solid $color-blue-5;
+      }
+   }
+
+   .next {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      cursor: pointer;
+      height: 70px;
+      width: 58px;
+      line-break: 70px;
+      text-align: center;
+      color: $color-white-0;
+      background-color: rgba(85, 85, 85, 0.8);
+      border: 1px solid rgba(85, 85, 85, 0.8);
+      border-radius: 0;
+      transform: translateY(-50%);
+
+      i {
+         font-size: 50px;
+         transform: translate(+2px,2px);
+      }
+      &:hover{
+         color:$color-blue-5;
+         background-color: $color-white-0;
+         border: 1px solid $color-blue-5;
+      }
+   }
+   .scroll-down{
+      position: absolute;
+      bottom: 30px;
+      cursor: pointer;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 99;
+   }
+}

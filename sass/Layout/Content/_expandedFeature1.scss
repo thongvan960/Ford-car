@@ -1,0 +1,26 @@
+.expandedFeature1{
+   .expandedFeature-content{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      text-align: center;
+      background-color: #0276B3;
+      .expandedFearure__item{
+         padding: 60px 20px;
+         h2{
+            @include styleText($color-white-0,$fs-3 + 5,$fw-bold);
+            margin-bottom: $mg-2;
+         }
+         p{
+            @include styleText($color-white-0,$fs-1 + 2,$fw-normal);
+            margin-bottom: $mg-3;
+         }
+      }
+   }
+   .expandedFeatureText{
+      text-align: center;
+      p{
+         padding: 20px 10px;
+         @include styleText($color-black-0,$fs-1 - 1,$fw-normal);
+      }
+   }
+}

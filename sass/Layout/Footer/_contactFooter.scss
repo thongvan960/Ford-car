@@ -1,0 +1,86 @@
+
+.contactFooter{
+   background-color: $color-blue-2;
+   padding: 40px 70px;
+   .contactFooter__content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .contactFooter__left{
+         display: flex;
+         li{
+            display: flex;
+            align-items: center;
+            margin-right: 50px;
+            span{
+               margin-right: 10px;
+               @include styleText($color-blue-0,$fs-2,$fw-normal);
+              i{
+               height: 40px;
+               width: 40px;
+               line-height: 40px;
+               background-color: $color-blue-0;
+               color:$color-white-0;
+               border-radius: 50%;
+               text-align: center;
+              }
+            }
+         }
+      }
+      .followSocial{
+         display: flex;
+         align-items: center;
+         p{
+            @include styleText($color-white-0,$fs-1 - 1,$fw-normal);
+         }
+         ul{
+            margin-left: 40px;
+            li{
+               display: inline;
+               margin: 0 2px;
+               a{
+                  
+                  i{
+                     height: 42px;
+                     width: 42px;
+                     line-height: 42px;
+                     background-color: $color-blue-0;
+                     color:$color-white-0;
+                     border-radius: 0;
+                     text-align: center;
+                  }
+                 
+               }
+               &:nth-child(1){
+                  a{
+                     i{
+                        background-color:$color-blue-3;
+                     }
+                  }
+               }
+               &:nth-child(2){
+                  a{
+                    i{
+                     background-color:$color-blue-4;
+                    }
+                  }
+               }
+               &:nth-child(3){
+                  a{
+                    i{
+                     background-color:$color-red-1;
+                    }
+                  }
+               }
+               &:nth-child(2){
+                  a{
+                    i{
+                     background-color:$color-pink-0;
+                    }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

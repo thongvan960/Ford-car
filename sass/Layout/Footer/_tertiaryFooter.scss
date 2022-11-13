@@ -1,0 +1,28 @@
+.tertialyFooter{
+   padding: 40px 70px;
+   background-color: $color-gray-2;
+   border-color: $color-gray-4;
+   .tertialyFooter__content{
+      display: flex;
+      justify-content: space-between;
+      ul{
+         li{
+            @include styleText($color-black-3,$fs-1 - 1 ,$fw-normal);
+            margin-bottom: 10px;
+           a{
+              color:$color-blue-0;
+              font-size: 17px;
+              i{
+               margin-right: 10px;
+            }
+           }
+            .nav-footer{
+               li{
+                  display: inline;
+                  margin-right: 10px;
+               }
+            }
+         }
+      }
+   }
+}
